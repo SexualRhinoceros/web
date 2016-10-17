@@ -448,3 +448,15 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+button{
+    position:absolute;
+    top:30px;
+    left:2px;
+}
+
+#tricky-button img {
+    display: block;
+    height: 190px;  
+    width: 380px;
+}
