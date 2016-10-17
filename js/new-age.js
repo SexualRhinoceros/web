@@ -1,5 +1,14 @@
 (function($) {
     "use strict"; // Start of use strict
+    
+    $("button").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*$(document).width())+"px",
+                top:(Math.random()*$(document).height())+"px",
+            });
+        }
+    });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -29,15 +38,3 @@
     })
 
 })(jQuery); // End of use strict
-
-
-$(function(){
-    $("button").on({
-        mouseover:function(){
-            $(this).css({
-                left:(Math.random()*600)+"px",
-                top:(Math.random()*600)+"px",
-            });
-        }
-    });
-});
